@@ -27,8 +27,7 @@ const createImageElement = (url, alt_text, full_screen) => {
 }
 
 const getData = () => {
-  // const url = 'https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=16eebc5dba8a6e445aa2fdf076a24f45&extras=url_s%2C+url_m%2C+url_l&per_page=50&page=2&format=json&nojsoncallback=1&api_sig=6c9ed87ae02c0c83c8c6a4740012f872';
-  const url = '/images'
+  const url = '/images';
   fetch(url).then((res) => {
     return res.json();
   })
